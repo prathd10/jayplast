@@ -13,7 +13,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-white via-[#FAF5E8] to-[#E3D2B4] min-h-screen">
+    <div className="bg-gradient-to-b from-white via-[#FFF9CC] to-[#B9A66A] min-h-screen">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden bg-industrial-dark text-white">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gold-primary/10 -skew-x-12 translate-x-1/4" />

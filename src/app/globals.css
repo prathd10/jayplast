@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gold-primary: #B8860B;
-  --color-gold-light: #DAA520;
-  --color-gold-dark: #8B4513;
-  --color-gold-accent: #d4af37;
+  --color-gold-primary: #B9A66A;
+  --color-gold-light: #FFF9CC;
+  --color-gold-dark: #9C8952;
+  --color-gold-accent: #B9A66A;
   
   --color-industrial-gray: #333333;
   --color-industrial-light: #f5f5f5;
@@ -23,17 +23,17 @@
   :root {
     --background: #ffffff;
     --foreground: #1a1a1a;
-    --primary: #B8860B;
+    --primary: #B9A66A;
     --primary-foreground: #ffffff;
     --secondary: #333333;
     --secondary-foreground: #ffffff;
     --muted: #f5f5f5;
     --muted-foreground: #737373;
-    --accent: #d4af37;
+    --accent: #B9A66A;
     --accent-foreground: #1a1a1a;
     --border: #e5e5e5;
     --input: #e5e5e5;
-    --ring: #B8860B;
+    --ring: #B9A66A;
   }
 
   body {
@@ -43,12 +43,12 @@
 
 @layer utilities {
   .gold-gradient {
-    background: linear-gradient(135deg, #B8860B 0%, #E6BE8A 50%, #B8860B 100%);
+    background: linear-gradient(135deg, #B9A66A 0%, #FFF9CC 50%, #B9A66A 100%);
   }
   
   .gold-text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, #8B4513 0%, #B8860B 50%, #8B4513 100%);
+    background-image: linear-gradient(135deg, #9C8952 0%, #B9A66A 50%, #9C8952 100%);
   }
 
   .metallic-grain {

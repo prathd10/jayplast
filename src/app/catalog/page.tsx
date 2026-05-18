@@ -27,7 +27,7 @@ export default function CatalogPage() {
   });
 
   return (
-    <div className="bg-gradient-to-b from-white via-[#FAF5E8] to-[#E3D2B4] min-h-screen">
+    <div className="bg-gradient-to-b from-white via-[#FFF9CC] to-[#B9A66A] min-h-screen">
       {/* Header Section */}
       <section className="bg-industrial-dark text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full gold-gradient opacity-10 -skew-x-12 translate-x-1/4" />
