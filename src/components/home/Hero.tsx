@@ -7,10 +7,10 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-white metallic-grain">
+    <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-gradient-to-b from-white via-[#FAF5E8] to-[#E3D2B4] metallic-grain">
       {/* Dynamic Background Elements */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-0 right-0 w-2/3 h-full bg-industrial-light -skew-x-12 translate-x-1/4" />
+        <div className="absolute top-0 right-0 w-2/3 h-full bg-[#CBB48B]/20 -skew-x-12 translate-x-1/4" />
         <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-gold-primary/5 rounded-full blur-[120px]" />
         <div className="absolute top-24 right-24 w-64 h-64 bg-gold-primary/10 rounded-full blur-[100px]" />
       </div>

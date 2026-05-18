@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin, Send, ShieldCheck, MessageSquare } from "lucide-re
 
 export default function ContactPage() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-gradient-to-b from-white via-[#FAF5E8] to-[#E3D2B4] min-h-screen">
       {/* Hero Header */}
       <section className="bg-industrial-dark text-white pt-32 pb-24 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full gold-gradient opacity-10 -skew-x-12 translate-x-1/4" />

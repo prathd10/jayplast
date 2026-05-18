@@ -13,7 +13,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-gradient-to-b from-white via-[#FAF5E8] to-[#E3D2B4] min-h-screen">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden bg-industrial-dark text-white">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gold-primary/10 -skew-x-12 translate-x-1/4" />
@@ -58,7 +58,7 @@ export default function AboutPage() {
       </section>
 
       {/* Content Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="relative">
@@ -100,7 +100,7 @@ export default function AboutPage() {
       </section>
 
       {/* Vision & Values */}
-      <section className="py-24 bg-industrial-light/30">
+      <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-industrial-dark">Our Core Values</h2>

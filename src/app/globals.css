@@ -64,6 +64,13 @@
     background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
   }
 
+  .glass {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(229, 229, 229, 0.5);
+  }
+
   .glass-card {
     @apply bg-white/80 backdrop-blur-md border border-gray-100;
     box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);

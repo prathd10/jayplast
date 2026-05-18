@@ -33,9 +33,9 @@ export default function ProductDetailsPage({ params }: PageProps) {
   const encodedMessage = encodeURIComponent(whatsappMessage);
 
   return (
-    <div className="bg-white min-h-screen pb-24">
+    <div className="bg-gradient-to-b from-white via-[#FAF5E8] to-[#E3D2B4] min-h-screen pb-24">
       {/* Breadcrumbs & Navigation */}
-      <div className="bg-industrial-light/50 border-b border-gray-100">
+      <div className="bg-transparent border-b border-gray-100/50">
         <div className="container mx-auto px-4 md:px-6 py-4">
           <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
             <Link href="/" className="hover:text-gold-primary transition-colors">Home</Link>
