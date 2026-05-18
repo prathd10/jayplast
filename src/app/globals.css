@@ -1,26 +1,101 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-gold-primary: #B8860B;
+  --color-gold-light: #DAA520;
+  --color-gold-dark: #8B4513;
+  --color-gold-accent: #d4af37;
+  
+  --color-industrial-gray: #333333;
+  --color-industrial-light: #f5f5f5;
+  --color-industrial-dark: #121212;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --radius-premium: 2rem;
+  --radius-button: 0.75rem;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #1a1a1a;
+    --primary: #B8860B;
+    --primary-foreground: #ffffff;
+    --secondary: #333333;
+    --secondary-foreground: #ffffff;
+    --muted: #f5f5f5;
+    --muted-foreground: #737373;
+    --accent: #d4af37;
+    --accent-foreground: #1a1a1a;
+    --border: #e5e5e5;
+    --input: #e5e5e5;
+    --ring: #B8860B;
+  }
+
+  body {
+    @apply bg-white text-industrial-dark antialiased;
+  }
+}
+
+@layer utilities {
+  .gold-gradient {
+    background: linear-gradient(135deg, #B8860B 0%, #E6BE8A 50%, #B8860B 100%);
+  }
+  
+  .gold-text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #8B4513 0%, #B8860B 50%, #8B4513 100%);
+  }
+
+  .metallic-grain {
+    position: relative;
+  }
+
+  .metallic-grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.05;
+    pointer-events: none;
+    background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-gray-100;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+  }
+
+  .premium-shadow {
+    box-shadow: 0 20px 40px -15px rgba(184, 134, 11, 0.1);
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-industrial-light;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gold-primary rounded-full;
+}
+
+/* Base Styles */
+.container {
+  @apply max-w-7xl mx-auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply tracking-tight font-bold;
 }
